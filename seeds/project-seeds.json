@@ -3,13 +3,22 @@
         "title": "Weather Dashboard",
         "description": "Full-stack CMS-style blog site where developers can publish and comment, using MVC architectural structure, Handlebars.js, Sequelize, and express-session.",
         "repo_url": "https://github.com/magickw/WeatherDashboard",
-        "deployed_url": "https://vast-chamber-35721.herokuapp.com/",
-        "image_path": "/assets/images/tech-blog.jpg"
+        "deployed_url": "https://magickw.github.io/WeatherDashboard/",
+        "image_path": "https://github.com/magickw/portfolio/blob/main/assets/images/WeatherDashboard.gif?raw=true"
     },
     {
+        "title": "AstroDash",
+        "description": "Astronomy Dashboard uses geolocation functions and weather API to present the weather conditions such as visibility and cloudiness, and moon phases.",
+        "repo_url": "https://github.com/DazedChou/Astronomy-Dashboard",
+        "deployed_url": "https://dazedchou.github.io/Astronomy-Dashboard/",
+        "image_path": "https://github.com/magickw/portfolio/blob/main/assets/images/AstroDash.gif?raw=true"
       
     },
     {
-       
+        "title": "CodeQuiz",
+        "description": "CodeQuiz is a timed coding quiz with multiple-choice questions.",
+        "repo_url": "https://github.com/magickw/CodeQuiz",
+        "deployed_url": "https://magickw.github.io/CodeQuiz/",
+        "image_path": "https://github.com/magickw/portfolio/blob/main/assets/images/codequiz.gif?raw=true"
     }
 ]
