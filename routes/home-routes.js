@@ -1,23 +1,14 @@
 const router = require('express').Router();
 const sequelize = require('../config/connection');
-const {  } = require('../models');
+const { Project } = require('../models');
 
 router.get('/', async (req, res) => {
 
     // Pass serialized data and session flag into template
-    res.render('landingpage');
+    res.render('homepage');
 });
 
 
-//route to project create page
-router.get('/projects', (req, res) => {
-  if (req.session.loggedIn) {
-    res.redirect('/');
-    return;
-  }
-
-  res.render('projects');
-});
 
 router.get('/projects', async (req, res) => {
   try {
