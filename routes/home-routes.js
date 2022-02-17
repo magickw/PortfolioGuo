@@ -87,12 +87,11 @@ router.get('/projects', async (req, res) => {
         }
 
        
-        const post = dbProjectData.get({ plain: true });
+        const project = dbProjectData.get({ plain: true });
 
         // pass data to template
         res.render('project', {
-            ...post,
-            loggedIn: req.session.loggedIn
+            project
           });
       })
       .catch(err => {
