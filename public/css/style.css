@@ -1,0 +1,43 @@
+:root {
+    --font-family: "Georgia", sans-serf;
+    --primary-color: #98d1db;
+    --secondary-color: #acb9e7;
+    --primary-shadow: #6a74df;
+    --secondary-shadow: #a17a69;
+    --text-color: #161818;
+    --bottom-margin: 0.5rem;
+    --bottom-margin-2: 1rem;
+    --line-height: 1.8rem;
+    --transition: 0.3s;
+  }
+  
+  /* Global settings*/
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+  }
+  
+  
+  body {
+    font-family: var(--font-family);
+    min-height: 100vh;
+    font-size: 16px;
+    background-color: var(--primary-color);
+  }
+
+.header {
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    align-content: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid grey;
+  }
+  
+  .footer {
+    width: 100%;
+    border-top: 2px solid grey;
+    height: 5px;
+  }
