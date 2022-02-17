@@ -20,5 +20,33 @@
         "repo_url": "https://github.com/magickw/CodeQuiz",
         "deployed_url": "https://magickw.github.io/CodeQuiz/",
         "image_path": "https://github.com/magickw/portfolio/blob/main/assets/images/codequiz.gif?raw=true"
+    },
+    {
+        "title": "Work Day Scheduler",
+        "description": "This simple calendar application that allows a user to save and delete events for each hour of the day.",
+        "repo_url": "https://github.com/magickw/CodeQuiz",
+        "deployed_url": "https://magickw.github.io/Work-Day-Scheduler/",
+        "image_path": "https://github.com/magickw/portfolio/blob/main/assets/images/scheduler.gif?raw=true"
+    },
+    {
+        "title": "NodeJS README Generator using ES6",
+        "description": "This simple calendar application that allows a user to save and delete events for each hour of the day.",
+        "repo_url": "https://github.com/magickw/ReadmeGenerator",
+        "deployed_url": "",
+        "image_path": "https://github.com/magickw/ReadmeGenerator/raw/main/demo.gif"
+    },
+    {
+        "title": "Note Taker",
+        "description": "This application allows you to write notes, save notes and deletes that are being stored in a db.json file.",
+        "repo_url": "https://github.com/magickw/NoteTaker",
+        "deployed_url": "https://notetaker-guo.herokuapp.com/",
+        "image_path": "https://github.com/magickw/NoteTaker/blob/main/demo/demo.gif?raw=true"
+    },
+    {
+        "title": "Team Profile Generator",
+        "description": "This is a command-line application that runs with Node.js to create a simple webpage featuring your development team's roster.",
+        "repo_url": "https://github.com/magickw/TeamProfileGenerator",
+        "deployed_url": "",
+        "image_path": "https://github.com/magickw/TeamProfileGenerator/raw/main/demo/demo.gif"
     }
 ]
