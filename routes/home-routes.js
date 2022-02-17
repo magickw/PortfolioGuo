@@ -13,19 +13,21 @@ router.get('/', async (req, res) => {
 router.get('/projects', async (req, res) => {
   try {
     const projectData = await Project.findAll({
-      include: [
+      attributes: [
         {
-          model: User,
-          attributes: ['name'],
+          title,
+          description,
+          repo_url,
+          deployed_url,
+          image_path
         },
       ],
     });
 
     const projects = projectData.map((project) => project.get({ plain: true }));
 
-    res.render('all-projects', { 
-      projects, 
-      logged_in: req.session.logged_in 
+    res.render('projects', { 
+      projects
     });
   } catch (err) {
     res.status(500).json(err);

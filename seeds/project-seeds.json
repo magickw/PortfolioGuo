@@ -1,5 +1,10 @@
 [
     {
+        "title": "Weather Dashboard",
+        "description": "Full-stack CMS-style blog site where developers can publish and comment, using MVC architectural structure, Handlebars.js, Sequelize, and express-session.",
+        "repo_url": "https://github.com/magickw/WeatherDashboard",
+        "deployed_url": "https://vast-chamber-35721.herokuapp.com/",
+        "image_path": "/assets/images/tech-blog.jpg"
     },
     {
       
