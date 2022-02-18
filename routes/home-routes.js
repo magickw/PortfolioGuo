@@ -2,10 +2,13 @@ const router = require('express').Router();
 const sequelize = require('../config/connection');
 const { Project } = require('../models');
 
-router.get('/', async (req, res) => {
-
+router.get('/', (req, res) => {
+    const data = {
+      greeting: 'Hello, Welcome to My Portfolio Site',
+      introduction: 'I am a translator turned full stack developer frm San Francisco Bay Area.'
+    }
     // Pass serialized data and session flag into template
-    res.render('homepage');
+    res.render('landingpage', data);
 });
 
 
