@@ -4,8 +4,9 @@ const { Project } = require('../models');
 
 router.get('/', (req, res) => {
     const data = {
-      greeting: 'Hello, Welcome to My Portfolio Site',
-      introduction: 'I am a translator turned full stack developer frm San Francisco Bay Area.'
+      image_profile: '',
+      greeting: 'Hello, Welcome to my Portfolio Site',
+      introduction: 'I am Baofeng Guo, a translator turned full stack developer in San Francisco Bay Area.'
     }
     // Pass serialized data and session flag into template
     res.render('landingpage', data);
