@@ -13,8 +13,9 @@ const PORT = process.env.PORT || 3001;
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
+// set path for static assets
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(require('./routess/home-routes'));
+app.use(require('./routes/home-routes'));
 
 // Starts the server to begin listening
 app.listen(PORT, () => {
