@@ -1,4 +1,7 @@
-[
+const { Project } = require('../models/');
+
+
+const projectData = [
     {
         "title": "Weather Dashboard",
         "description": "Full-stack CMS-style blog site where developers can publish and comment, using MVC architectural structure, Handlebars.js, Sequelize, and express-session.",
@@ -77,4 +80,10 @@
         "deployed_url": "https://still-headland-20752.herokuapp.com/",
         "image_path": "https://github.com/magickw/DontFundMe/raw/main/images/demonstration.gif"
     }
-]
+ 
+ 
+];
+
+const seedProjects = () => Project.bulkCreate(projectData);
+
+module.exports = seedProjects;
