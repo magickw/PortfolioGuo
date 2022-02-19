@@ -1,9 +1,9 @@
 // Dependencies
 const router = require('express').Router();
 // API routes folder
-const homeRoutes = require('./home-routes.js');
+const main = require('routes/main.js');
 
-router.use('/', homeRoutes);
+router.use('/', main);
 
 router.use((req, res) => {
   res.status(404).end();

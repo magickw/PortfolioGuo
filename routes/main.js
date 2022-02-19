@@ -4,7 +4,7 @@ const { Project } = require('../models');
 
 router.get('/', (req, res) => {
     const data = {
-      image_profile: '',
+      image_background: '',
       greeting: 'Hello, Welcome to my Portfolio Site',
       introduction: 'I am Baofeng Guo, a translator turned full stack developer in San Francisco Bay Area.'
     }

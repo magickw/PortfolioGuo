@@ -71,11 +71,11 @@ const projectData = [
         "description": "This application is a tech blog which allows the developers to publish blog posts, make comments and create accounts using MVC architectural structure, Handlebars.js, Sequelize.",
         "repo_url": "https://github.com/magickw/MVCTechBlog",
         "deployed_url": "https://guotechblog.herokuapp.com/",
-        "image_path": "https://github.com/magickw/MVCTechBlog/raw/main/images/demo.gif"
+        "image_path": "public/images/techblog.gif"
     },
     {
-        "title": "GitFundMe",
-        "description": "GitFundMe is a crowdfunding app that allows user to share their stories and get helped by friends, family, and even strangers",
+        "title": "DontFundMe",
+        "description": "DontFundMe is a crowdfunding app that allows user to share their stories and get helped by friends, family, and even strangers",
         "repo_url": "https://github.com/magickw/GitFundMe",
         "deployed_url": "https://still-headland-20752.herokuapp.com/",
         "image_path": "https://github.com/magickw/DontFundMe/raw/main/images/demonstration.gif"
