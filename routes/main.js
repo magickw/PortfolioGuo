@@ -3,13 +3,13 @@ const sequelize = require('../config/connection');
 const { Project } = require('../models');
 
 router.get('/', (req, res) => {
-    const data = {
-      image_background: '',
+    const landingpage = {
+      image_profile: '',
       greeting: 'Hello, Welcome to my Portfolio Site',
       introduction: 'I am Baofeng Guo, a translator turned full stack developer in San Francisco Bay Area.'
     }
     // Pass serialized data and session flag into template
-    res.render('landingpage', data);
+    res.render('landingpage', landingpage);
 });
 
 
