@@ -104,11 +104,9 @@ router.get('/projects', async (req, res) => {
       });
 });
 
-// router.get("/about", (req, res) => {
-//   res.render('about', aboutme);
-// } catch (err) {
-// res.status(500).json(err);
-// });
+router.get("/about", (req, res) => {
+  res.render('about');
+});
 
 router.get("/contact", (req, res) => {
   const contactInformation = {
