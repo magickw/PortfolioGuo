@@ -9,7 +9,7 @@ router.get('/', (req, res) => {
       introduction: 'I am Baofeng Guo, a translator turned full stack developer in San Francisco Bay Area.'
     }
     // Pass serialized data and session flag into template
-    res.render('landingpage', landingpage);
+    res.render('home', landingpage);
 });
 
 
@@ -102,6 +102,10 @@ router.get('/projects', async (req, res) => {
         console.log(err);
         res.status(500).json(err);
       });
+});
+
+router.get("/home", (req, res) => {
+  res.render('home');
 });
 
 router.get("/about", (req, res) => {
