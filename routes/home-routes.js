@@ -108,6 +108,14 @@ router.get("/about", (req, res) => {
   res.render('about');
 });
 
+router.get("/skills", (req, res) => {
+  res.render('skills');
+});
+
+router.get("/experience", (req, res) => {
+  res.render('experience');
+});
+
 router.get("/contact", (req, res) => {
   const contactInformation = {
     links: [
