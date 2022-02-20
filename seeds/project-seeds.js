@@ -73,13 +73,6 @@ const projectData = [
         "deployed_url": "https://guotechblog.herokuapp.com/",
         "image_path": "public/images/techblog.gif"
     },
-    {
-        "title": "DontFundMe",
-        "description": "DontFundMe is a crowdfunding app that allows user to share their stories and get helped by friends, family, and even strangers",
-        "repo_url": "https://github.com/magickw/GitFundMe",
-        "deployed_url": "https://still-headland-20752.herokuapp.com/",
-        "image_path": "https://github.com/magickw/DontFundMe/raw/main/images/demonstration.gif"
-    }
  
  
 ];
