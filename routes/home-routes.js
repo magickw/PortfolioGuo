@@ -104,4 +104,30 @@ router.get('/projects', async (req, res) => {
       });
 });
 
+router.get("/about", (req, res) => {
+  res.render('about', aboutme);
+} catch (err) {
+res.status(500).json(err);
+});
+
+router.get("/contact", (req, res) => {
+  const contactInformation = {
+    links: [
+      {
+        href: "https://github.com/magickw",
+        title: "GitHub",
+      },
+      {
+        href: "https://www.linkedin.com/in/bfguo",
+        title: "LinkedIn",
+      },
+      {
+        href: "mailto:peterguo1983@gmail.com",
+        title: "Email",
+      },
+    ],
+  };
+  res.render('contact', contactInformation);
+});
+
 module.exports = router
