@@ -3,14 +3,14 @@ async function contactFormHandler(event) {
     event.preventDefault();
   
     
-    const id = window.location.toString().split('/')[
-      window.location.toString().split('/').length - 1
-    ];
+    // const id = window.location.toString().split('/')[
+    //   window.location.toString().split('/').length - 1
+    // ];
     const name = document.querySelector('input[name="name"]').value.trim();
     const email = document.querySelector('input[name="email"]').value.trim();
     const message = document.querySelector('textarea[name="message"]').value.trim();
   
-    if (message && name && email && id) {
+    if (message && name && email) {
         const response = await fetch('/contact', {
           method: 'POST',
           body: JSON.stringify({
