@@ -5,7 +5,7 @@ const { Project } = require('../models');
 router.get('/', (req, res) => {
     const landingpage = {
       image_profile: 'public/images/profile.jpg',
-      greeting: 'Hello, Welcome to my Portfolio Site',
+      greeting: 'Hello, Welcome to my Portfolio Site!',
       introduction: 'I am Baofeng Guo, a translator turned full stack developer in San Francisco Bay Area.'
     }
     // Pass serialized data and session flag into template
