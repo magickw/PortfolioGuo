@@ -15,7 +15,7 @@ app.set('view engine', 'handlebars');
 
 // set path for static assets
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(require('./routes/home-routes'));
+app.use(require('./routes'));
 
 // Starts the server to begin listening
 app.listen(PORT, () => {

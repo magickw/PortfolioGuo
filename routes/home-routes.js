@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const sequelize = require('../config/connection');
+const { Project } = require('../models/');
 
 
 router.get('/', (req, res) => {
@@ -47,5 +48,44 @@ router.get("/contact", (req, res) => {
   };
   res.render('contact', contactInformation);
 });
+
+router.get('/projects', async (req, res) => {
+  try {
+    console.log("Hi");
+    const dbProjectData = await Project.findAll({
+      attributes: [
+        {
+          id,
+          title,
+          description,
+          repo_url,
+          deployed_url,
+          image_path
+        },
+      ],
+    });
+    const projects = dbProjectData.map((project) => project.get({ plain: true }));
+    console.log(projects);
+    res.render('projects', { 
+      projects
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+
+  router.get('/projects/:id', async (req, res) => {
+    try { projectData = await Project.findByPk(req.params.id, {
+      include: [{ all: true, nested: true }],
+    });
+        const project = projectData.get({ plain: true });
+                res.render('single-project', {
+                  project });
+                } catch (err) {
+                  res.status(500).json(err);
+                }
+              });
+
 
 module.exports = router
