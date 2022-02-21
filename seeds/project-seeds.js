@@ -32,39 +32,11 @@ const projectData = [
         "image_path": "public/images/scheduler.gif"
     },
     {
-        "title": "NodeJS README Generator using ES6",
-        "description": "This simple calendar application that allows a user to save and delete events for each hour of the day.",
-        "repo_url": "https://github.com/magickw/ReadmeGenerator",
-        "deployed_url": "",
-        "image_path": "public/images/README.gif"
-    },
-    {
         "title": "Note Taker",
         "description": "This application allows you to write notes, save notes and deletes that are being stored in a db.json file.",
         "repo_url": "https://github.com/magickw/NoteTaker",
         "deployed_url": "https://notetaker-guo.herokuapp.com/",
         "image_path": "public/images/notetaker.gif"
-    },
-    {
-        "title": "Team Profile Generator",
-        "description": "This is a command-line application that runs with Node.js to create a simple webpage featuring your development team's roster.",
-        "repo_url": "https://github.com/magickw/TeamProfileGenerator",
-        "deployed_url": "",
-        "image_path": "public/images/teamprofile.gif"
-    },
-    {
-        "title": "E-Commerce Backend",
-        "description": "This application creates the backend of an e-commerce website by using Express.js API and Sequelize to interact with a MySQL database.",
-        "repo_url": "https://github.com/magickw/E-commerce-backend",
-        "deployed_url": "",
-        "image_path": "public/images/ecommerce.gif"
-    },
-    {
-        "title": "Employee Tracker",
-        "description": "This application is a CLI application using mySQL to create a database management system for employee and company information.",
-        "repo_url": "https://github.com/magickw/EmployeeTracker",
-        "deployed_url": "",
-        "image_path": "public/images/employeetracker.gif"
     },
     {
         "title": "Tech Blog with MVC architectural structure",
