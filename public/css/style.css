@@ -21,6 +21,7 @@
   
   
   body {
+    font: "Georgia", sans-serf;
     font-family: var(--font-family);
     min-height: 100vh;
     font-size: 16px;
@@ -59,7 +60,7 @@
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    padding-left: 0;
+    padding-left: 10;
     margin-bottom: 0;
     list-style: none;
   }
@@ -67,11 +68,13 @@
   .nav-link {
     display: block;
     padding: 0.5rem 1rem;
-    font-size: 18px;
+    font-size: 20px;
   }
   
   .nav-link:hover, .nav-link:focus {
     text-decoration: none;
+    background-color: #07788b;
+    border-radius: 10%;
   }
   
   .nav-link.disabled {
