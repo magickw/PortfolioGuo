@@ -73,7 +73,7 @@ footer {
   
   .nav-link:hover, .nav-link:focus {
     text-decoration: none;
-    background-color: #07788b;
+    background-color: #54d0e6;
     border-radius: 10%;
   }
   
@@ -107,16 +107,7 @@ footer {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
   }
-  
 
-  
-  .nav-justified .nav-item {
-    -ms-flex-preferred-size: 0;
-    flex-basis: 0;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    text-align: center;
-  }
   
   
   .navbar {
@@ -131,17 +122,30 @@ footer {
     justify-content: space-between;
     padding: 0.5rem 1rem;
   }
-  
 
-  
-
-  
-  .navbar-brand:hover, .navbar-brand:focus {
-    text-decoration: none;
+  .navbar-brand {
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
   }
   
-  .navbar-nav {
+  .navbar > .container,
+  .navbar > .container-fluid {
     display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .navbar-nav {
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
