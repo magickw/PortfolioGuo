@@ -34,12 +34,10 @@ header {
     padding-bottom: 5px;
     align-content: center;
     margin-bottom: 0px;
-    border-bottom: 2px solid grey;
   }
   
 footer {
     width: 100%;
-    border-top: 2px solid grey;
     height: 5px;
   }
 
@@ -56,7 +54,6 @@ footer {
   
  
 .nav {
-    display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -591,6 +588,14 @@ footer {
   left: 0%;
   }
 }
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
 
 .skills {
   max-width: 68.75rem;
