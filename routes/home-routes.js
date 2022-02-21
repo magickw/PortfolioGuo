@@ -4,7 +4,6 @@ const { Project } = require('../models');
 
 router.get('/', (req, res) => {
     const landingpage = {
-      image_profile: 'public/images/profile.jpg',
       greeting: 'Hello, Welcome to my Portfolio Site!',
       introduction: 'I am Baofeng Guo, a translator turned full stack developer in San Francisco Bay Area.'
     }
@@ -103,6 +102,7 @@ router.get('/projects', async (req, res) => {
         res.status(500).json(err);
       });
 });
+
 
 router.get("/home", (req, res) => {
   res.render('home');

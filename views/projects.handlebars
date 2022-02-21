@@ -1,16 +1,3 @@
-<div class="row mt-5 aos-init aos-animate" data-aos="fade-up">
-    {{#each projects as | project |}}
-
-    
-    <div class="col-md-4 col-sm-12 mb-2">
-        <div class="position-relative project">
-            <div class="image position-relative">
-
-            </div>
-
-        </div>
-
-    </div>
-    {{/each}}
-
-</div>
+{{#each projects as |project|}}
+{{> project-info}}
+{{/each}}

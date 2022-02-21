@@ -31,10 +31,9 @@
 header {
     width: 100%;
     padding-top: 10px;
-    background-color: rgb(214, 200, 200);
     padding-bottom: 5px;
     align-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     border-bottom: 2px solid grey;
   }
   
