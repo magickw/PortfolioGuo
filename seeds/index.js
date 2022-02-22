@@ -9,6 +9,7 @@ const seedAll = async () => {
   await seedProjects();
   console.log('\n----- PROJECTS SEEDED ---\n');
 
+
   process.exit(0);
 };
 

@@ -30,48 +30,38 @@ router.get("/experience", (req, res) => {
 });
 
 router.get("/contact", (req, res) => {
-  const contactInformation = {
-    links: [
-      {
-        href: "https://github.com/magickw",
-        title: "GitHub",
-      },
-      {
-        href: "https://www.linkedin.com/in/bfguo",
-        title: "LinkedIn",
-      },
-      {
-        href: "mailto:peterguo1983@gmail.com",
-        title: "Email",
-      },
-    ],
-  };
-  res.render('contact', contactInformation);
+  res.render('contact');
 });
 
-router.get('/projects', async (req, res) => {
-  try {
-    console.log("Hi");
-    const dbProjectData = await Project.findAll({
-      attributes: [
-        {
-          id,
-          title,
-          description,
-          repo_url,
-          deployed_url,
-          image_path
-        },
-      ],
-    });
-    const projects = dbProjectData.map((project) => project.get({ plain: true }));
-    console.log(projects);
-    res.render('projects', { 
-      projects
-    });
-  } catch (err) {
-    res.status(500).json(err);
-  }
+// router.get('/projects', async (req, res) => {
+//   try {
+//     console.log("Hi");
+//     const dbProjectData = await Project.findAll({
+//       attributes: [
+//         {
+//           id,
+//           title,
+//           description,
+//           repo_url,
+//           deployed_url,
+//           image_path
+//         },
+//       ],
+//     });
+//     const projects = dbProjectData.map((project) => project.get({ plain: true }));
+//     console.log(projects);
+//     res.render('projects', { 
+//       projects
+//     });
+//   } catch (err) {
+//     res.status(500).json(err);
+//   }
+// });
+
+router.get('/projects', (req, res, next) => {
+  res.render('projects', {
+      path: '/projects',
+  });
 });
 
 

@@ -1,35 +1,56 @@
-//contact form handler
-async function contactFormHandler(event) {
-    event.preventDefault();
-  
-    
-    const id = window.location.toString().split('/')[
-      window.location.toString().split('/').length - 1
-    ];
-    const name = document.querySelector('input[name="name"]').value.trim();
-    const email = document.querySelector('input[name="email"]').value.trim();
-    const message = document.querySelector('textarea[name="message"]').value.trim();s
-  
-    if (message && name && email && id) {
-        const response = await fetch('/contact', {
-          method: 'POST',
-          body: JSON.stringify({
-            id,
-            name,
-            email,
-            message
-          }),
-          headers: {
-            'Content-Type': 'application/json'
-          }
-        });
-      
-        if (response.ok) {
-          document.location.reload();
-        } else {
-          alert(response.statusText);
-        }
-      }
+function toggle(divId) {
+	var element = document.getElementById(divId);
+  if (element.style.display === "none") {
+      element.style.display = "block";
+  } else {
+      element.style.display = "none";
   }
-  
-  document.querySelector('.contact-form').addEventListener('submit', contactFormHandler);
+}
+
+function hideAll(divClass) {
+	var elements = document.getElementsByClassName(divClass);
+	for (var i = 0; i < elements.length; i++) {
+		elements[i].style.display = "none";
+	}
+}
+
+function show(divId) {
+	document.getElementById(divId).style.display = "block";
+}
+
+var stopEvents = function(event) {
+	event.preventDefault();
+	event.stopPropagation();
+}
+
+var formSubmit = function(token) {
+	console.log(token);
+
+	hideAll("error");
+	var name = document.forms["contactForm"]["name"].value;
+	var email = document.forms["contactForm"]["email"].value;
+	var subject = document.forms["contactForm"]["subject"].value;
+	var text = document.forms["contactForm"]["text"].value;
+	var emailFilter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+	var fine = true;
+
+	if (name == "") {
+		show("nameNull");
+		fine = false;
+	}
+	if (email == "" || !emailFilter.test(email)) {
+		show("emailNull");
+		fine = false;
+	}
+	if (subject == "") {
+		show("subjectNull");
+		fine = false;
+	}
+	if (text == "") {
+		show("textNull");
+		fine = false;
+	}
+	if (fine) {
+  	document.getElementById("contactForm").submit();
+  }
+}

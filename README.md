@@ -16,7 +16,7 @@ My personal portfolio website built by using Node.js handlebars.
 
 # Deployed Link
 
-The link to the deployed application is: #
+The link to the deployed application is: https://bfguo.herokuapp.com/
 
 
 # Authors
