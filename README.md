@@ -37,11 +37,11 @@ Then open your browser and type http://localhost:3001/ to run this application o
 
 
 ## Deployed Link
-The link to the deployed application is: [Tech Review](https://guotechblog.herokuapp.com/).
+The link to the deployed application is: https://bfguo.herokuapp.com/.
 
 ## Demo
 Below is the demostration of this application.
-<img src="./images/portfolio.gif" alt="demo" />
+<img src="public/images/portfolio.gif" alt="demo" />
 
 
 **[⬆ back to top](#table-of-contents)**
