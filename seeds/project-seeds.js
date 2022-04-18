@@ -8,7 +8,7 @@ const projectData = [
         description: "Full-stack CMS-style blog site where developers can publish and comment, using MVC architectural structure, Handlebars.js, Sequelize, and express-session.",
         repo_url: "https://github.com/magickw/WeatherDashboard",
         deployed_url: "https://magickw.github.io/WeatherDashboard/",
-        image_path: "/.images/WeatherDashboard.gif"
+        image_path: "./images/WeatherDashboard.gif"
     },
     {
         id: 2,
